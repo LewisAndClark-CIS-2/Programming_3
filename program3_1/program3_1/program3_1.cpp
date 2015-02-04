@@ -14,19 +14,17 @@ int main()
 	cin >> num;
 	temp = num;
 	int dec = 1;
-	int c = 1;
-	while (num / c > 10)
+	float c = 1;
+	while ((num / c) >= 1.0)
 	{
 		c *= 10;
 	}
-	c *= 10;
 	while (num != temp)
 	{
 		num *= 10;
 		dec *= 10;
 		temp = num;
 	}
-	cout << dec << endl;
 	int i = 1000;
 	while (temp > 0)
 	{
